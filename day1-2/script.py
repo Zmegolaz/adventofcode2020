@@ -1,9 +1,5 @@
-input_lines = []
 with open('input') as f:
-    for line in f:
-        if line.strip():
-            input_lines.append(int(line.strip()))
-
+    input_lines = [int(line.rstrip()) for line in f]
 done = False
 for input in input_lines:
     if done:
